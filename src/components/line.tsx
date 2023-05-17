@@ -9,6 +9,9 @@ const MyResponsiveLine = ({ data /* see data tab */ }: any) => (
   <ResponsiveLine
     // interpolation={'linear'}
     data={data}
+    animate={true} // Enable animation
+    motionConfig="gentle"
+    enableSlices="x"
     margin={{ top: 50, right: 110, bottom: 100, left: 60 }}
     xScale={{ type: 'point' }}
     yScale={{
